@@ -1,2 +1,4 @@
 # Max-Min-Heap
-Build a max-min heap from an array
+Builds a max-min heap from an array.
+
+The program has the option to extract the maximum value and minimum value from the heap, you can also insert and delete elements from it.
