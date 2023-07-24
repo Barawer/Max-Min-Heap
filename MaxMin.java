@@ -26,25 +26,23 @@ public class MaxMin {
         int swapper=i;
 
         if(flag==0){
-            if(isEvenLevel(i)){
-                if(heap[leftChild]>heap[swapper]){
-                    swapper=leftChild;
-                }
-                else if(rightChild<this.heapSize && heap[rightChild]>heap[swapper] ){
-                    swapper=rightChild;
-                }
-                else if(leftLeftGrandchild<this.heapSize && heap[leftLeftGrandchild]>heap[swapper]){
-                    swapper=leftLeftGrandchild;
-                }
-                else if(leftRightGrandchild<this.heapSize && heap[leftRightGrandchild]>heap[swapper]){
-                    swapper=leftRightGrandchild;
-                }
-                else if(rightLeftGrandchild<this.heapSize && heap[rightLeftGrandchild]>heap[swapper]){
-                    swapper=rightLeftGrandchild;
-                }
-                else if(rightRightGrandchild<this.heapSize && heap[rightRightGrandchild]>heap[swapper]){
-                    swapper=rightRightGrandchild;
-                }
+            if(heap[leftChild]>heap[swapper]){
+                 swapper=leftChild;
+            }
+             else if(rightChild<this.heapSize && heap[rightChild]>heap[swapper] ){
+                 swapper=rightChild;
+            }
+            else if(leftLeftGrandchild<this.heapSize && heap[leftLeftGrandchild]>heap[swapper]){
+                swapper=leftLeftGrandchild;
+            }
+            else if(leftRightGrandchild<this.heapSize && heap[leftRightGrandchild]>heap[swapper]){
+                swapper=leftRightGrandchild;
+            }
+            else if(rightLeftGrandchild<this.heapSize && heap[rightLeftGrandchild]>heap[swapper]){
+                swapper=rightLeftGrandchild;
+            }
+            else if(rightRightGrandchild<this.heapSize && heap[rightRightGrandchild]>heap[swapper]){
+                swapper=rightRightGrandchild;
             }
         }
         else{
