@@ -7,14 +7,13 @@ public class Main {
         MaxMin A= new MaxMin();
         Scanner option=new Scanner(System.in);
         System.out.println("Hello and welcome to the Max-Min Heap toolbox.");
-        System.out.println("In order to build form the Array.txt, it must be in the same folder as this program");
+        System.out.println("In order to build from the Array.txt, it must be in the same folder as this program");
         System.out.println("And must be formatted with each value in a separate line");
         System.out.println("1. Build heap from Array.txt file");
         System.out.println("2. Exit");
         System.out.print("Please select an option: ");
         switch (option.nextInt()){
             case 1:
-                System.out.println("\nPlease enter the filename (with extensions) with the array:");
                 A.buildHeap(readArrayFromFile("Array.txt"));
                 System.out.println("\nPrinting the Heap:");
                 A.printHeap();
